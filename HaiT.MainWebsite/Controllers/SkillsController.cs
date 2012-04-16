@@ -3,24 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using HaiT.MainWebsite.Common;
 
 namespace HaiT.MainWebsite.Controllers
 {
-    public class SplashScreenController : Controller
+    public class SkillsController : Controller
     {
         //
-        // GET: /SplashScreen/
+        // GET: /Skill/
 
         public ActionResult Index()
         {
-            if(SplashHelper.HasSplashCookie(Request))
-               return RedirectToAction("Index","Hy");
             return View();
         }
 
         //
-        // GET: /SplashScreen/Details/5
+        // GET: /Skill/Details/5
 
         public ActionResult Details(int id)
         {
@@ -28,7 +25,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // GET: /SplashScreen/Create
+        // GET: /Skill/Create
 
         public ActionResult Create()
         {
@@ -36,7 +33,7 @@ namespace HaiT.MainWebsite.Controllers
         } 
 
         //
-        // POST: /SplashScreen/Create
+        // POST: /Skill/Create
 
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -54,7 +51,7 @@ namespace HaiT.MainWebsite.Controllers
         }
         
         //
-        // GET: /SplashScreen/Edit/5
+        // GET: /Skill/Edit/5
  
         public ActionResult Edit(int id)
         {
@@ -62,7 +59,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // POST: /SplashScreen/Edit/5
+        // POST: /Skill/Edit/5
 
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
@@ -80,7 +77,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // GET: /SplashScreen/Delete/5
+        // GET: /Skill/Delete/5
  
         public ActionResult Delete(int id)
         {
@@ -88,7 +85,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // POST: /SplashScreen/Delete/5
+        // POST: /Skill/Delete/5
 
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)

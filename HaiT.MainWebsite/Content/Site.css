@@ -61,6 +61,99 @@ img.Splash
     margin-top: 5em;   
 }
 
+.row {
+width: 960px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.column {
+margin: 0 10px;
+overflow: visible;
+float: left;
+display: block;
+position: relative;
+}
+
+#headerMenu {
+    min-width: 100%;
+}
+
+#menuLogo {
+
+width: 150px;
+height: 150px;
+display: block;
+float: left;
+margin: 0;
+    border-width: 0px;
+}
+
+
+#nav li {
+float: left;
+    
+}
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+#nav {
+line-height: 30px;
+ margin-top: 4em;
+ font-size: 1.4em;
+}
+ul, ol {
+list-style: none;
+}
+
+
+
+#nav li.current a {
+color: #222;
+}
+#nav a:hover {
+color: #222;
+}
+#nav a, #nav a:visited {
+
+text-decoration: none;
+padding: 5px;
+margin: 0 15px;
+}
+#nav a, #nav a:visited {
+
+text-decoration: none;
+padding: 5px;
+margin: 0 15px;
+}
+
+
+/* allow room for 3 columns */
+  ol.GlobalService
+  {
+    width: 70em;
+  }
+
+  /* float & allow room for the widest item */
+  ol.GlobalService li
+  {
+    float: left;
+    width: 20em;
+    padding: 1em;
+  }
+
+  /* stop the float */
+  br
+  {
+    clear: left;
+  }
+
+  /* separate the list from subsequent markup */
+  div.wrapper
+  {
+    margin-bottom: 1em;
+  }
 
 
 

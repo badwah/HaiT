@@ -7,20 +7,20 @@ using HaiT.MainWebsite.Common;
 
 namespace HaiT.MainWebsite.Controllers
 {
-    public class SplashScreenController : Controller
+    public class HyController : Controller
     {
         //
-        // GET: /SplashScreen/
+        // GET: /Hy/
 
         public ActionResult Index()
         {
-            if(SplashHelper.HasSplashCookie(Request))
-               return RedirectToAction("Index","Hy");
+            SplashHelper.SetSplashCookie(Request,Response);
+           
             return View();
         }
 
         //
-        // GET: /SplashScreen/Details/5
+        // GET: /Hy/Details/5
 
         public ActionResult Details(int id)
         {
@@ -28,7 +28,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // GET: /SplashScreen/Create
+        // GET: /Hy/Create
 
         public ActionResult Create()
         {
@@ -36,7 +36,7 @@ namespace HaiT.MainWebsite.Controllers
         } 
 
         //
-        // POST: /SplashScreen/Create
+        // POST: /Hy/Create
 
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -54,7 +54,7 @@ namespace HaiT.MainWebsite.Controllers
         }
         
         //
-        // GET: /SplashScreen/Edit/5
+        // GET: /Hy/Edit/5
  
         public ActionResult Edit(int id)
         {
@@ -62,7 +62,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // POST: /SplashScreen/Edit/5
+        // POST: /Hy/Edit/5
 
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
@@ -80,7 +80,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // GET: /SplashScreen/Delete/5
+        // GET: /Hy/Delete/5
  
         public ActionResult Delete(int id)
         {
@@ -88,7 +88,7 @@ namespace HaiT.MainWebsite.Controllers
         }
 
         //
-        // POST: /SplashScreen/Delete/5
+        // POST: /Hy/Delete/5
 
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
